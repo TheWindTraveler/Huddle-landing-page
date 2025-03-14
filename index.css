@@ -1,3 +1,112 @@
+/* Varibles */
+:root{
+    --primary-color: hsl(193, 100%, 96%);
+    --pre-color: hsl(208, 11%, 55%);
+    --btn-color: hsl(322, 100%, 66%);
+    --secondary-color: hsl(192, 100%, 9%);
+    --general-font-size: 18px;
+    --heading-fonts: "Poppins", sans-serif;
+    --heading-fonts-weights: 600;
+    --body-and-cta: "Open Sans", sans-serif;
+    --body-and-cta-fonts-weights-1: 400;
+    --body-and-cta-fonts-weights-2: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--heading-fonts);
+}
+
+/* Hero Section */
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/bg-hero-desktop.svg") var(--primary-color) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Top Navbar */
+.hero__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/* Logo */
+.logo{
+    width: 170px;
+}
+
+.cta__btn{
+    background-color: white;
+    color: var(--secondary-color);
+    border: none;
+    padding: 13px;
+    border-radius: 50px;
+    box-shadow:0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    font-size: 15px;
+    font-weight: var(--body-and-cta-fonts-weights-2);
+    width: 15%;
+    cursor: pointer;
+}
+
+.cta__btn:hover{
+    background-color: var(--btn-color);
+    color: white;
+}
+
+/* Hero Content */
+.hero__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__text{
+    max-width: 48%;
+}
+
+.hero__text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero__text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero__image{
+    width: 50%;
+}
+
+.hero__btn{
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    font-size: 18px;
+    font-weight: var(--body-and-cta-fonts-weights-1);
+    width: 45%;
+    cursor: pointer;
+}
+
+.hero__btn:hover{
+    background-color: var(--secondary-color);
+}
+
+/* Attribution */
 .attribution {
     font-size: 11px;
     text-align: center;
