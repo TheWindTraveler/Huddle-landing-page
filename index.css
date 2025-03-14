@@ -78,6 +78,7 @@
 .hero__text h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 
 .hero__text p {
@@ -105,6 +106,39 @@
 .hero__btn:hover{
     background-color: var(--secondary-color);
 }
+
+/* Main Section */
+.main__section{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 70%;
+    margin-top: 70px;
+    padding: 70px;
+    box-shadow: 0px 3px 15px rgba(133, 132, 132, 0.3);
+    border-radius: 15px;
+}
+
+.main__section__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grow__together_illustration{
+    width: 350px;
+}
+
+.main__section__text{
+    width: 43%;
+}
+
+.main__section__text > h1{
+    margin-bottom: 12px;
+    color: var(--secondary-color);
+}
+
+
 
 /* Attribution */
 .attribution {
