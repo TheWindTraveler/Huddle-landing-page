@@ -1,4 +1,4 @@
-/* Varibles */
+/* Variables */
 :root{
     --primary-color: hsl(193, 100%, 96%);
     --pre-color: hsl(208, 11%, 55%);
@@ -112,9 +112,10 @@
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    height: 70%;
-    margin-top: 70px;
-    padding: 70px;
+    /* height: 70%; */
+    width: 92%;
+    margin: 100px auto;
+    padding: 50px;
     box-shadow: 0px 3px 15px rgba(133, 132, 132, 0.3);
     border-radius: 15px;
 }
@@ -149,4 +150,111 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Main Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.footer__container{
+    width: 30%;
+}
+
+.footer__links{
+    list-style-type: none;
+}
+
+.footer__container, .footer__right, .footer__socials{
+    margin: 65px;
+}
+
+.footer__contact{
+    width: 50%;
+}
+
+.footer__contact, p{
+    margin: 10px;
+}
+
+li, a{
+    color: white;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+li a:hover,
+li a:focus {
+    color: var(--btn-color);
+    text-decoration: underline;
+}
+
+.fa-solid{
+    /* padding: 10px; */
+    margin: 10px;
+}
+
+/* Icons */
+.fab{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.fab:hover{
+    background-color: var(--btn-color);
+    color: white;
+}
+
+
+
+/* Footer Box */
+.footer__top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.cta__box {
+    background: white;
+    color: var(--secondary-color);
+    padding: 50px;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer__cta__btn{
+    margin-top: 30px;
+    padding: 15px;
+    width: 65%;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--btn-color);
+    color: white;
+    cursor: pointer;
+}
+
+.footer__cta__btn:hover{
+    background-color: var(--secondary-color);
+}
+
+
+.footer__copyright{
+    text-align: center;
+    color: white;
+    background-color: var(--secondary-color);
 }
